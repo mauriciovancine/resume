@@ -1,0 +1,168 @@
+%------------------------
+% Ethan's Résumé Template
+% Author: mauricio vancine
+% License: CC-BY-4.0
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\input{glyphtounicode}
+
+% font options
+\usepackage[sc]{mathpazo}
+\linespread{1.05}  % palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}  % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.1in}
+\addtolength{\evensidemargin}{-0.1in}
+\addtolength{\textwidth}{.1in}
+\addtolength{\topmargin}{.1in}
+\addtolength{\textheight}{.1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% custom commands
+\newcommand{\cvitem}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\cvheadingend}{\end{itemize}}
+\newcommand{\cvitemstart}{\begin{itemize}\justifying}
+\newcommand{\cvitemend}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\cvskill}[2]{
+  \textcolor{black}{\textbf{#1}}\hfill
+  \foreach \x in {1,...,5}{%
+    \space{\ifnumgreater{\x}{#2}{\color{black!80!white!20}}{\color{black}}\faSquare}}\par%
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+\begin{document}
+
+% contact information
+\begin{center}
+  \textbf{\LARGE\scshape Maurício H. Vancine} \\
+  \vspace{1pt}\small
+  \href{mailto:}{mauricio.vancine@gmail.com}
+  $\ \bullet\ $ 
+  \href{https://github.com/mauriciovancine}{GitHub}
+  $\ \bullet\ $
+  \href{https://www.linkedin.com/in/mauricio-vancine/}{LinkedIn}
+\end{center}
+
+\section{Summary}
+I am an Ecologist with a PhD in Ecology from UNESP, Brazil. My expertise includes spatial ecology, ecological modeling, and species distribution modeling (SDM). I have published over 30 papers on biodiversity and climate change in South America. I also develop tools for landscape metrics in R and GRASS GIS, and have extensive experience teaching R.
+
+\section{Education}
+\cvheadingstart
+  \cvheading
+    {São Paulo State University (UNESP)}{Rio Claro, SP, Brazil}
+    {PhD, Ecology}{03/2020 - 07/2024}
+  \cvheading
+    {São Paulo State University (UNESP)}{Rio Claro, SP, Brazil}
+    {MS, Zoology}{03/2016 - 07/2018}
+  \cvheading
+    {São Paulo State University (UNESP)}{Rio Claro, SP, Brazil}
+    {BS, Ecology}{09/2011 - 03/2015}
+\cvheadingend
+
+\section{Professional Experience}
+\cvheadingstart
+  \cvheading
+    {State University of Campinas (Unicamp)}{Campinas, SP, Brazil}
+    {Postdoctoral in Spatial Ecology, LDDiv}{10/2024 - Present}
+\cvheadingend
+
+\section{Technical Skills}
+\cvskill{R}{5}
+\cvskill{tidyverse}{4}
+\cvskill{GRASS GIS}{4}
+\cvskill{QGIS}{3}
+\cvskill{git}{3}
+\cvskill{shell/bash}{2}
+\cvskill{Python}{2}
+\cvskill{LaTeX}{2}
+\cvskill{Google Earth Engine}{1}
+\vspace{-5pt}
+
+\section{Publications}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{\href{https://orcid.org/0000-0001-9650-7575}{ORCID}}
+  \cvitem{\href{https://www.webofscience.com/wos/author/record/837504}{ResearcherID: F-7305-2016}}
+  \cvitem{\href{https://www.scopus.com/authid/detail.uri?authorId=57193451888}{Scopus}}
+  \cvitem{\href{https://www.researchgate.net/profile/Mauricio-Vancine}{ResearchGate}}
+  \cvitem{\href{https://scholar.google.com/citations?user=i-2xZBQAAAAJ}{Google Scholar}}
+\cvitemend
+\cvheadingend
+
+\section{Languages}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{English (intermediate)}
+  \cvitem{Spanish (basic)}
+  \cvitem{Portuguese (native speaker)}
+\cvitemend
+\cvheadingend
+
+\section{References}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{{\bf Prof. Dr. Milton Cezar Ribeiro}, milton.c.ribeiro@unesp.br, +55-19-3526-9680}
+  \cvitem{{\bf Prof. Dr. Célio F. B. Haddad}, haddad1000@gmail.com, +55-19-3526-4302}
+  \cvitem{{\bf Prof. Dr. Mathias Pires Mistretta},
+  mathiasmpires@gmail.com, +55-19-3521-6275}
+\cvitemend
+\cvheadingend
+
+\end{document}

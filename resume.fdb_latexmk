@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1728472353 "resume.tex" "resume.pdf" "resume" 1728472354
+["pdflatex"] 1728843852 "resume.tex" "resume.pdf" "resume" 1728843852
   "/etc/texmf/web2c/texmf.cnf" 1686797573 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc" 1622837620 2905 1556c73dc99638e0dfff2f132c244f30 ""
@@ -180,9 +180,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1720529548 4036811 4cb80868003c86b962b6b5ae1e1e2902 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726972661 1456733 6c333de08ebf95be2f6878a65ec36af2 ""
-  "resume.aux" 1728472354 1531 5c94af02788f7168eac9dac93715647b "pdflatex"
-  "resume.out" 1728472354 737 b4858259f54db9d684c207244087dd3c "pdflatex"
-  "resume.tex" 1728472351 4894 e751232f5f36d2f090fe6f65f04c9a53 ""
+  "resume.aux" 1728843852 1531 5c94af02788f7168eac9dac93715647b "pdflatex"
+  "resume.out" 1728843852 737 b4858259f54db9d684c207244087dd3c "pdflatex"
+  "resume.tex" 1728843852 5579 31cf55e4e31f5c5f10de3e791453d224 ""
   (generated)
   "resume.aux"
   "resume.log"
